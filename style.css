@@ -12,6 +12,8 @@
     background-color: #f0f0f0;
     padding: 10px;
     font-size: 1.5em;
+    border-radius: 5px;
+    border-style: hidden;
 }
 
 button {
