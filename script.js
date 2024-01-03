@@ -31,8 +31,10 @@ function appendToDisplay(value) {
 // Função para realizar o cálculo quando o botão de igual é pressionado
 function calculate() {
     try {
+        // Adiciona um espaço antes e depois dos parênteses para garantir a correta separação
+        let spacedExpression = displayValue.replace(/([()])/g, ' $1 ');
         // Usa a função evaluate da Math.js para avaliar a expressão no visor
-        displayValue = math.evaluate(displayValue).toString();
+        displayValue = math.evaluate(spacedExpression).toString();
         // Atualiza o visor com o resultado do cálculo
         updateDisplay();
     } catch (error) {
