@@ -7,39 +7,42 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="calculator">
-        <input type="text" class="display" id="display" readonly>
-        <button  class="clearbutton" onclick="clearDisplay()">C</button>
-            <!--Botões numeros-->
-            <button onclick="appendToDisplay('0')">0</button>
-            <button onclick="appendToDisplay('1')">1</button>
-            <button onclick="appendToDisplay('2')">2</button>            
-            <button onclick="appendToDisplay('3')">3</button>
-            <button onclick="appendToDisplay('4')">4</button>
-            <button onclick="appendToDisplay('5')">5</button>
-            <button onclick="appendToDisplay('6')">6</button>
-            <button onclick="appendToDisplay('7')">7</button>
-            <button onclick="appendToDisplay('8')">8</button>
-            <button onclick="appendToDisplay('9')">9</button>
-            <button onclick="appendToDisplay('(')">(</button>
-            <button onclick="appendToDisplay(')')">)</button>
-            <button onclick="appendToDisplay('.')">.</button>
-            <!--Botões das operações-->
-            <button onclick="appendToDisplay('+')">+</button>
-            <button onclick="appendToDisplay('-')">_</button>
-            <button onclick="appendToDisplay('*')">*</button>
-            <button onclick="appendToDisplay('/')">/</button> 
-            <button onclick="appendToDisplay('%')">%</button>  
-            <button onclick="appendToDisplay('sqrt')">√</button>
-            <button onclick="appendToDisplay('pi')">π</button>
-            <button onclick="appendToDisplay('log')">log</button>
-            <button onclick="appendToDisplay('sin')">sen</button>
-            <button onclick="appendToDisplay('cos')">cos</button>
-            <button onclick="appendToDisplay('tan')">tan</button>
-  <!--      <button onclick="appendToDisplay('expr')">exp</button>-->    
-                    
-        <button class="equalbutton" onclick="calculate()">=</button>
-    </div>
+    <section class="allbody"> 
+        <div class="calculator">
+            <input type="text" class="display" id="display" readonly>
+            <button  class="clearbutton" onclick="clearDisplay()">C</button>
+                <!--Botões numeros-->
+                <button onclick="appendToDisplay('0')">0</button>
+                <button onclick="appendToDisplay('1')">1</button>
+                <button onclick="appendToDisplay('2')">2</button>            
+                <button onclick="appendToDisplay('3')">3</button>
+                <button onclick="appendToDisplay('4')">4</button>
+                <button onclick="appendToDisplay('5')">5</button>
+                <button onclick="appendToDisplay('6')">6</button>
+                <button onclick="appendToDisplay('7')">7</button>
+                <button onclick="appendToDisplay('8')">8</button>
+                <button onclick="appendToDisplay('9')">9</button>
+                <button onclick="appendToDisplay('(')">(</button>
+                <button onclick="appendToDisplay(')')">)</button>
+                <button onclick="appendToDisplay('.')">.</button>
+                <!--Botões das operações-->
+                <button onclick="appendToDisplay('+')">+</button>
+                <button onclick="appendToDisplay('-')">_</button>
+                <button onclick="appendToDisplay('*')">*</button>
+                <button onclick="appendToDisplay('/')">/</button> 
+                <button onclick="appendToDisplay('%')">%</button>  
+                <button onclick="appendToDisplay('sqrt')">√</button>
+                <button onclick="appendToDisplay('pi')">π</button>
+                <button onclick="appendToDisplay('log')">log</button>
+                <button onclick="appendToDisplay('sin')">sen</button>
+                <button onclick="appendToDisplay('cos')">cos</button>
+                <button onclick="appendToDisplay('tan')">tan</button>
+    <!--      <button onclick="appendToDisplay('expr')">exp</button>-->    
+                        
+            <button class="equalbutton" onclick="calculate()">=</button>
+        </div>
+    </section>
+
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.js"></script>
     <script src="script.js"></script>
