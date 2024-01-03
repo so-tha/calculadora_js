@@ -3,8 +3,8 @@ let displayValue = '0';
 
 // Função para atualizar o conteúdo do visor
 function updateDisplay() {
-    // Obtém o elemento do visor pelo ID e define seu texto como o valor atual
-    document.getElementById('display').innerText = displayValue;
+    // Obtém o elemento do visor pelo ID e define seu valor como o valor atual
+    document.getElementById('display').value = displayValue;
 }
 
 // Função para limpar o visor
@@ -31,8 +31,8 @@ function appendToDisplay(value) {
 // Função para realizar o cálculo quando o botão de igual é pressionado
 function calculate() {
     try {
-        // Usa a função eval para avaliar a expressão no visor e converte o resultado em uma string
-        displayValue = eval(displayValue).toString();
+        // Usa a função evaluate da Math.js para avaliar a expressão no visor
+        displayValue = math.evaluate(displayValue).toString();
         // Atualiza o visor com o resultado do cálculo
         updateDisplay();
     } catch (error) {
@@ -42,3 +42,4 @@ function calculate() {
         updateDisplay();
     }
 }
+
