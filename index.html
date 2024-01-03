@@ -8,7 +8,7 @@
 </head>
 <body>
     <div class="calculator">
-        <div class="display" id="display">0</div>
+        <input type="text" class="display" id="display" readonly>
         <button  class="clearbutton" onclick="clearDisplay()">C</button>
             <!--Botões numeros-->
             <button onclick="appendToDisplay('0')">0</button>
@@ -26,10 +26,11 @@
             <button onclick="appendToDisplay('-')">_</button>
             <button onclick="appendToDisplay('*')">*</button>
             <button onclick="appendToDisplay('/')">/</button> 
+            <button onclick="appendToDisplay('%')">%</button>            
 
         <button onclick="calculate()">=</button>
     </div>
-    
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/11.1.0/math.js"></script>
     <script src="script.js"></script>
 </body>
